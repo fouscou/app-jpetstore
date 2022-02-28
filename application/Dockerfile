@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM openjdk:11
 
 LABEL io.k8s.display-name="Jpetstore" \
       io.k8s.description="A web java application" \
@@ -6,7 +6,6 @@ LABEL io.k8s.display-name="Jpetstore" \
       io.openshift.tags="java, web"
 
 RUN yum -y update && \
-    yum -y install java-1.8.0-openjdk-devel
 
 COPY mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar /app/ 
 
