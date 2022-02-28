@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:latest
 
 LABEL io.k8s.display-name="Jpetstore" \
       io.k8s.description="A web java application" \
