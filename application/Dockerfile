@@ -11,7 +11,6 @@ WORKDIR /app/
 
 RUN chgrp -R 0 /app/ && \
     chmod -R g=u /app/ && \
-    touch /db/jpetstore
     
 COPY mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar /app/ 
 
