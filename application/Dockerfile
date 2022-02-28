@@ -5,12 +5,17 @@ LABEL io.k8s.display-name="Jpetstore" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="java, web"
 
-RUN yum -y update && \
+RUN yum -y update
 
-COPY mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar /app/ 
+EXPOSE 8080
 
 WORKDIR /app/
 
-EXPOSE 8080
+RUN chgrp -R 0 /app/ && \
+    chmod -R g=u /app/
+
+COPY mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar /app/ 
+
+USER 1001
 
 CMD ["java", "-jar", "mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar"]
