@@ -5,8 +5,6 @@ LABEL io.k8s.display-name="Jpetstore" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="java, web"
 
-RUN yum -y update
-
 EXPOSE 8080
 
 WORKDIR /app/
