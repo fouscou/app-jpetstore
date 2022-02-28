@@ -9,11 +9,11 @@ EXPOSE 8080
 
 WORKDIR /app/
 
-RUN chgrp -R 0 /app/ && \
-    chmod -R g=u /app/
+#RUN chgrp -R 0 /app/ && \
+#    chmod -R g=u /app/
 
 COPY mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar /app/ 
 
-USER 1001
+#USER 1001
 
 CMD ["java", "-jar", "mybatis-spring-boot-jpetstore-2.0.0-SNAPSHOT.jar"]
