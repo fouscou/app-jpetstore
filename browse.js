@@ -5,7 +5,7 @@ import { parseHTML } from 'k6/html';
 export const options = {
 	stages: [
 		{ duration: '1m', target: 5 },
-		{ duration: '5m', target: 5 },
+		{ duration: '4m', target: 5 },
 		{ duration: '1m', target: 0 },
 	],
 }
