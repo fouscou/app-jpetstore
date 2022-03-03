@@ -9,9 +9,9 @@ It is just an example with a script and data set file working together to simula
   - [Installation of K6](#installation-of-k6)
   - [Installation of a sample web application](#installation-of-sample-web-application)
 
-- [Run the test on your local machine](#run-the-test)
-  - [Download files on your local machine](#download-files)
-  - [Run the test](#run-test) 
+- [Run the test on your local machine](#run-the-test-on-your-local-machine)
+  - [Download files on your local machine](#download-files-on-your-local-machine)
+  - [Run the test](#run-the-test) 
 
 ## Installation
 
