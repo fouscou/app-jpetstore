@@ -1,5 +1,5 @@
 import  http  from 'k6/http';
-import { sleep, check, group } from 'k6';
+import { sleep, check, group } from 'k6'
 import { parseHTML } from 'k6/html';
 
 export const options = {
@@ -31,7 +31,7 @@ export default function () {
 	
 	let data = { "_csrf": _csrf, "username": data_set[0].username, "password": data_set[0].password };
 	const res_user_page = http.post(BASE_URL+'/login', data);
-	check(res_user_page, { 'status was 200': (r) => r.status == 200 });
+	check(res_user_page, { 'status was 200' (r) => r.status == 200 });
 	     
      });
 
